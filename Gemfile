@@ -71,6 +71,6 @@ group :test do
   gem "webdrivers"
 end
 
-gem "json", "~> 2.6"
-
 gem "httparty", "~> 0.21.0"
+
+gem "json", "~> 2.6"
