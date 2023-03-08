@@ -2,8 +2,6 @@
 
 one:
   name: MyString
-  front_sprite: MyString
 
 two:
   name: MyString
-  front_sprite: MyString
