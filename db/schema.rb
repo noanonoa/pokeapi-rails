@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2023_03_07_212119) do
   create_table "pokemon", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+=======
+ActiveRecord::Schema[7.0].define(version: 2023_03_09_203755) do
+  create_table "pokemon", force: :cascade do |t|
+    t.string "name"
+    t.string "sprite"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> d87266d (generate pokemon controller)
 end

@@ -2,6 +2,14 @@
 
 one:
   name: MyString
+<<<<<<< HEAD
 
 two:
   name: MyString
+=======
+  sprite: MyString
+
+two:
+  name: MyString
+  sprite: MyString
+>>>>>>> d87266d (generate pokemon controller)
