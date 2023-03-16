@@ -70,3 +70,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "httparty", "~> 0.21.0"
+gem "json", "~> 2.6"
+
+gem "tailwindcss", "~> 0.1.1"
