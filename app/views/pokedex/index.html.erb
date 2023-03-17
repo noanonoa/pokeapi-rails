@@ -1,7 +1,10 @@
 <h1>Pokedex</h1>
-<%= form_with url: "/search", method: :post, data: { turbo: false } do |form| %>
-  <%= form.label :poke_name, "Search for pokemon:" %>
+<%= form_with method: :get, data: { turbo: false } do |form| %>
+  <%= form.label :poke_name, "Enter Pokemon Name:" %>
   <%= form.text_field :poke_name %>
   <%= form.submit "Search" %>
 <% end %>
 
+<%= tag.div do %>
+  <%= tag.h2 @pokemon['name'] %>
+<% end %>
