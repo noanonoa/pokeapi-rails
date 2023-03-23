@@ -12,6 +12,9 @@
     <%= image_tag @pokemon['sprites']['front_default'] %>
   </div>
   <%= form_with url: "/catch" do |form| %>
+    <%= form.hidden_field :external_id, value: @pokemon['id'] %>
+    <%= form.hidden_field :poke_name, value: @pokemon['name'] %>
+    <%= form.hidden_field :sprite_url, value: @pokemon['sprites']['front_default'] %>
     <%= form.submit "Catch" %>
   <% end %>
 </div>
