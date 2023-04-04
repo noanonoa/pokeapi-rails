@@ -1,2 +1,13 @@
 <h1>Pokemon#index</h1>
 <p>Find me in app/views/pokemon/index.html.erb</p>
+
+<% @pokemon.each do |pokemon| %>
+  <div>
+    <%= pokemon[:id] %>
+    <%= pokemon[:name] %>
+    <%= pokemon[:external_id] %>th pokemon
+    <div>
+      <%= image_tag pokemon[:sprite_url] %>
+    </div>
+  </div>
+<% end %>

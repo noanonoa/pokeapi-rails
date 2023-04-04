@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   get 'pokedex/index'
-  get 'pokemon/index'
+  get 'pokemon/index', as: "pokemon"
   get '/search' => 'pokedex#search'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
   root "pokedex#index"
+  post '/create' => 'pokemon#create'
 end
