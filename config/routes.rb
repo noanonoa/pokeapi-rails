@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  resources :pokemon
   root "pokedex#index"
+  get "/search" => "pokedex#search"
+  resources :pokemon
 end
